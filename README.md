@@ -8,3 +8,8 @@
 -   White box vs Black box testing
 -   Functional testing
 -   Testing scenarios.
+
+### Day 2
+
+-   Test plan/document
+-   Testomat tool
