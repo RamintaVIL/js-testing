@@ -13,3 +13,12 @@
 
 -   Test plan/document
 -   Testomat tool
+
+### Day 3
+
+-   SDLC -
+-   Waterfall
+-   Agile
+    Framework:
+-   Kanban - paprastesne versija (trello)
+-   Scrum
