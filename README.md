@@ -22,3 +22,10 @@
     Framework:
 -   Kanban - paprastesne versija (trello)
 -   Scrum
+
+### Day 4
+
+-   Front-end
+-   Backend
+-   REST api
+-   Postman
