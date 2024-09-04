@@ -50,6 +50,6 @@
 
 -   Working with Postgre
 -   Primary key
--   Foreign key consytainers
+-   Foreign key constraints
 -   Relationships
 -   Joins.
