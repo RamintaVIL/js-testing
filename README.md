@@ -70,3 +70,6 @@
 -   Javascript / Express
 
 ### Day 2
+
+-   Testing types
+-   Git
