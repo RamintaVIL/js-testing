@@ -40,16 +40,33 @@
 -   Restful
 -   Api functionalities.
 
-## Day 2
+### Day 2
 
 -   Postgre install
 -   Databases intro
 -   SCRUM
 
-## Day 3
+### Day 3
 
 -   Working with Postgre
 -   Primary key
 -   Foreign key constraints
 -   Relationships
 -   Joins.
+
+### Day 4
+
+-   Backups
+-   Functions
+-   Indexes
+-   Views
+
+## Week 3
+
+### Day 1
+
+-   SCRUM
+-   Jira
+-   Javascript / Express
+
+### Day 2
