@@ -71,5 +71,5 @@
 
 ### Day 2
 
--   Testing types
+-   Testing types: Functional vs non-functional
 -   Git
