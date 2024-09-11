@@ -71,5 +71,10 @@
 
 ### Day 2
 
--   Testing types: Functional vs non-functional
--   Git
+-   Testing types:
+-   Functional vs Non-functional testing
+-   Regression testing
+-   Smoke testing
+-   Exploratory testing
+-   Git/Github
+-   Sanity testing
