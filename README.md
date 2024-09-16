@@ -78,3 +78,24 @@
 -   Exploratory testing
 -   Git/Github
 -   Sanity testing
+
+### Day 3
+
+-   Github / Branch/ Pull Request
+-   Javascript/ SQL integration recap
+-   Postman/SQL-testing
+
+###Day 4
+
+-   Javascript express programming
+-   Intro to basic - tests.
+
+## Week 4
+
+### Day 1
+
+-   Naming conventions
+-   Postman Prerequest
+-   Postman setting variables
+-   Postman running collections
+-   Postman AI
