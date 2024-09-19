@@ -74,6 +74,10 @@
             padding: 10px;
             text-align: center;
         }
+
+        .red-background {
+            background-color: red;
+        }
     </style>
 </head>
 
@@ -190,8 +194,6 @@
                 return;
             }
 
-
-
             // Insert the values into the table
             // const table = document.getElementById("infoTable").getElementsByTagName('tbody')[0];
             const table = document.querySelector("#infoTable tbody")
@@ -202,6 +204,10 @@
             newRow.insertCell(2).innerHTML = phone;
             newRow.insertCell(3).innerHTML = dob;
             newRow.insertCell(4).innerHTML = age;
+
+            if (age < 18) {
+                newRow.classList.add("red-background");
+            }
 
             // Clear input fields after submission
             document.getElementById('name').value = "";
