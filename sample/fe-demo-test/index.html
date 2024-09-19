@@ -123,7 +123,6 @@
                     <th>Phone</th>
                     <th>Date of Birth</th>
                     <th>Age</th>
-                    <th>Gender</th>
                 </tr>
             </thead>
             <tbody>
@@ -157,9 +156,6 @@
             if (today < new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate())) {
                 age--;
             }
-            if (age > 120) {
-                return 0;
-            }
             return age;
         }
 
@@ -172,7 +168,6 @@
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
             const dob = document.getElementById('dob').value;
-            const gender = document.getElementById('gender').value;
             const age = calculateAge(dob);
 
             if (name === "" || email === "" || phone === "" || dob === "") {
@@ -182,10 +177,6 @@
 
             if (!isValidNumber(phone)) {
                 alert("Phone number must contain only numbers.");
-                return;
-            }
-            if (age === 0) {
-                alert("Please correct your date of birth");
                 return;
             }
 
@@ -199,9 +190,8 @@
             newRow.insertCell(2).innerHTML = phone;
             newRow.insertCell(3).innerHTML = dob;
             newRow.insertCell(4).innerHTML = age;
-            newRow.insertCell(5).innerHTML = gender;
 
-            if (age < 18) {
+            if (calculateAge(dob) < 18) {
                 newRow.classList.add("red-background");
             }
 
