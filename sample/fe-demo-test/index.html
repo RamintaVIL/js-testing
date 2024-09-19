@@ -123,6 +123,7 @@
                     <th>Phone</th>
                     <th>Date of Birth</th>
                     <th>Age</th>
+                    <th>Gender</th>
                 </tr>
             </thead>
             <tbody>
@@ -131,7 +132,6 @@
     </div>
 
     <script>
-
         function generateRandomNumber() {
             let randomPhoneNumber = "";
             for (let i = 0; i < 8; i++) {
@@ -139,7 +139,6 @@
             }
             return randomPhoneNumber;
         }
-        // Puslapio užkrovimo metu užpildomas telefono numerio laukas
         window.onload = function () {
             const phoneInput = document.getElementById('phone');
             phoneInput.value = generateRandomNumber();
@@ -149,37 +148,33 @@
             const birthDate = new Date(dob);
             const today = new Date();
 
-            // Patikrina, ar gimimo data yra ateityje
             if (birthDate > today) {
-                return 0; // Galite grąžinti 0 arba kitą reikšmę, jei data neteisinga
+                return 0;
             }
 
             let age = today.getFullYear() - birthDate.getFullYear();
 
-            // Patikrina, ar gimimo data jau buvo šiais metais
             if (today < new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate())) {
                 age--;
             }
             if (age > 120) {
-                return 0; // Galite grąžinti 0 arba kitą reikšmę
+                return 0;
             }
             return age;
         }
 
         function isValidNumber(number) {
-            // Tikrinama, ar numeris sudarytas tik iš skaičių ir jo ilgis tinkamas
             return /^[0-9]+$/.test(number);
         }
 
         function submitForm() {
-            // Get values from input fields
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
             const dob = document.getElementById('dob').value;
+            const gender = document.getElementById('gender').value;
             const age = calculateAge(dob);
 
-            // Validation to ensure no empty fields
             if (name === "" || email === "" || phone === "" || dob === "") {
                 alert("Please fill out all fields.");
                 return;
@@ -204,12 +199,12 @@
             newRow.insertCell(2).innerHTML = phone;
             newRow.insertCell(3).innerHTML = dob;
             newRow.insertCell(4).innerHTML = age;
+            newRow.insertCell(5).innerHTML = gender;
 
             if (age < 18) {
                 newRow.classList.add("red-background");
             }
 
-            // Clear input fields after submission
             document.getElementById('name').value = "";
             document.getElementById('email').value = "";
             document.getElementById('phone').value = "";
