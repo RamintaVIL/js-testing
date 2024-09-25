@@ -85,7 +85,7 @@
 -   Javascript/ SQL integration recap
 -   Postman/SQL-testing
 
-###Day 4
+### Day 4
 
 -   Javascript express programming
 -   Intro to basic - tests.
@@ -118,3 +118,17 @@
 
 -   Intro to Cypress
 -   Intro FE automated front-tests
+
+## Week 5
+
+### Day 1
+
+-   AAA
+-   beforeEach cypress
+-   cypress best practices
+-   Reusing the code in Cypress tests
+
+### Day 2
+
+-   Cypress Commands
+-   CI/CD
