@@ -132,3 +132,10 @@
 
 -   Cypress Commands
 -   CI/CD
+
+### Day 3
+
+-   Virtual machines
+-   Linux virtual machines
+-   Pipelines
+-   Github actions/Yml.
